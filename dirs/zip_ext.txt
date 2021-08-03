@@ -1,0 +1,7 @@
+.zip
+.rar
+.7z
+.tar
+.tar.gz
+_bak.zip
+_bak.rar

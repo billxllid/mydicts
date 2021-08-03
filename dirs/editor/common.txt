@@ -1,0 +1,7 @@
+/api/app/v1/MobileEngine/UploadImage
+/UpFileForm.asp
+/UpFileForm.aspx
+/admin/Upload/Upload
+/API/Util/UploadApi
+/ModuleCommon/UTCommonAttachment/UploadFile
+/login/adminToLogin.do

@@ -1,0 +1,4 @@
+/module/ueditor/php/action_upload.php?action=uploadfile
+/ueditor/
+/ueditor/net/controller.ashx?action=catchimage
+/Content/JPM/ueditor/net/controller.ashx?action=catchimage
