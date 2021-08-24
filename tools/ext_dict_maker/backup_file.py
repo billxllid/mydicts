@@ -10,10 +10,11 @@ import tldextract
 
 
 def normal_to_dict(ext_dict=[]):
-    dict = ['www', 'web', 'webapps', 'site', 'wangzhan', 'portal', 'test', 'beifen', 'back', 'backup', 'bak', 'conf', 'config']
+    # dict = ['www', 'WWW', 'web', 'Web', 'WEB', 'webapps', 'Webapps', 'site', 'SITE', 'wangzhan', 'portal', 'test', 'TEST', 'beifen', 'back', 'backup', 'bak', 'BACK', 'conf', 'CONF','config']
+    dict = []
     dict.extend(ext_dict)
-    dict.extend([i.capitalize() for i in dict])
-    dict.extend([i.upper() for i in dict])
+    # dict.extend([i.capitalize() for i in dict])
+    # dict.extend([i.upper() for i in dict])
     return dict
 
 def url_to_dict(url):
@@ -83,12 +84,13 @@ def mix():
     return dict
 
 
-def mix_ext(d):
+def mix_ext(d, sp=[]):
     dict = []
-    ext = ['zip', 'rar', 'war', 'old', 'bak', 'sql', 'tar.gz', 'tar.bz2']
+    ext = ['zip', 'rar', 'war', 'old', 'bak', 'sql', 'txt']
     for i in ext:
         for j in d:
             dict.append('{0}.{1}'.format(j, i))
+    dict.extend(sp)
     return dict
 
 def save(path, d):
@@ -99,13 +101,13 @@ def save(path, d):
     print('write dict: {}'.format(len(d)))
 
 
-data = 'https://ningxia.tianditu.gov.cn/portal/home/'
+data = 'https://ningxia.tianditu.gov.cn/cgjg_wsm'
 final_name = []
-final_name.extend(normal_to_dict(['home', '10.6.1']))
-final_name.extend(url_to_dict(data))
-final_name.extend(year_to_dict())
-final_name.extend(num_to_dict(3))
-final_name.extend(letter_to_dict())
+final_name.extend(normal_to_dict(['nxzs', 'nxtdzs', 'tdzs', 'nxzs_api']))
+# final_name.extend(url_to_dict(data))
+# final_name.extend(year_to_dict())
+# final_name.extend(num_to_dict(3))
+# final_name.extend(letter_to_dict())
 # final_name.extend(mix())
 
-save('./01.txt', mix_ext(final_name))
+save('./01.txt', mix_ext(final_name, ['con.ini', 'config.ini']))
